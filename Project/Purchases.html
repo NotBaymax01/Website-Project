@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>purchase form</title>
+	<style>
+		* { 
+        padding: 0; 
+        margin: 0; 
+        box-sizing: border-box; 
+    	}
+
+    	.container{
+			width: 100%;
+			background-image: url("background.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		.navbar{
+        height: 15%;
+        display: flex; 
+        align-items: center;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,0,212,1), rgba(0,221,255,1));
+    	}
+
+        .logo{
+            height: 50px;
+            margin-left: 30px;
+        }
+
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding-right: 150px;
+        }
+
+        nav ul li a:hover{
+            opacity: 0.6;
+        }
+
+        .bolaLogo{
+                height: 80px;
+                margin-left: 73%;
+			
+		}
+		
+		.form {
+            justify-content: center; 
+            padding-top: 3rem;
+			background-color: white;
+        }
+
+        .userData {
+            display: flex;
+            width: 45vw;
+            height: 70vh;
+            border-radius: 12px; 
+            box-shadow: rgba(50, 50, 93, 0,25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+            background-color: white;
+			margin-left: 52%;
+			margin-top: 50px;
+			margin-bottom: 105px;
+        }
+		
+		.data {
+			display: inline-block;
+			box-sizing: border-box;
+			margin: 10px 50px;
+		}
+
+        h2 {
+            margin: 1.5rem 0 1rem 0; 
+            text-align: center;
+        }
+		
+		label{
+			font-size: 17px;
+		}
+
+        input {
+			height: 35px;
+            width: 230px;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+			margin: 10px 0;
+        }
+		
+		select{
+			height: 35px;
+            width: 230px;
+            outline: none;
+            font-size: 14px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+			margin: 10px 0;
+		}
+
+        button {
+            padding: 12px 48px;
+            border-radius: 40px;
+            margin-top: 10px; 
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+            border-radius: 1rem;
+            border: none;
+            position: relative;
+            background: #000000;
+            transition: 0.1s;
+            width: 200px;
+			margin-left: 20%;
+            }
+
+        button::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(2,245,255,1) 17.8%, rgba(255,94,247,1) 100.2%);
+            filter: blur(15px);
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            }
+
+        button:hover {
+            background: radial-gradient(circle farthest-corner at 10% 20%, rgba(2,245,255,1) 17.8%, rgba(255,94,247,1)  100.2%);
+            opacity: 0.8;
+            color: black;
+            }
+		
+		.socialMedia{
+			height: 10%;
+			display: flex; 
+        	align-items: center;
+        	background:#000000;
+		}
+		
+		.socialMedia nav{
+			flex: 1;
+			text-align: right;
+			padding-left: 100px;
+		}
+		
+		.socialMedia nav ul li{
+			list-style: none;
+			display: inline-block;
+			
+		}
+		
+		.fb-icon{
+			height: 50px;
+			cursor: pointer;
+		}
+		
+		.ig-icon{
+			height: 50px;
+			cursor: pointer;
+		}
+		
+		.twitter-icon{
+			height: 50px;
+			cursor: pointer;
+		}
+		
+		footer {
+			display: block;
+			height: 50hv;
+ 			padding: 3px;
+			text-align: right;
+  			background-color: black;
+  			color: white;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<script>
+		
+	</script>
+	
+	
+	<div class="container">
+          <div class="navbar">
+			  <img src="thlogo.png" class="logo">
+			  <img src="bolaLogo.png" class="bolaLogo">
+          </div>
+		
+		<form action="purchaseComplete.php" id="userData" class="userData" method="post">
+        	<div class="forms">
+				<h2>User Information</h2>
+				
+				<div class="data">
+					<label>Full Name</label> <br>
+					<input type="text" placeholder="Enter your Name" name="name" id="name" required><br>
+				</div>
+				
+				<div class="data">
+					<label>IC Number (without space or -)</label> <br>
+					<input type="text" placeholder="Enter your IC Number" name="icNum" id="icNum" required><br>
+				</div>
+				
+				<div class="data">
+					<label>Telephone Number</label> <br>
+					<input type="text" placeholder="Enter your Telephone Number" name="telNum" id="telNum" required><br>
+				</div>
+				
+				<div class="data">
+					<label>Email</label> <br>
+					<input type="text" placeholder="Enter your Email" name="email" id="email" required><br>
+				</div>
+				
+				<div class="data">
+					<label>Match</label> <br>
+					<select id="matchType" name="matchType">
+						<option value="Vietnam vs Malaysia">Vietnam vs Malaysia</option>
+						<option value="Malaysia vs Singapore">Malaysia vs Singapore</option>
+						<option value="Malaysia vs Laos">Malaysia vs Laos</option>
+						<option value="Myanmar vs Malaysia">Myanmar vs Malaysia</option>
+					</select> <br>
+				</div>
+				
+				<div class="data">
+					<label>Number Of Ticket</label> <br>
+					<input type="number" name="numOfTicket" id="numOfTicket" min="1" max="20" required><br>
+				</div>
+				
+				<div class="data">
+					<label>Type of Payment</label> <br>
+					<select id="paymentType" name="paymentType">
+						<option value="Credit/Debit Card">Credit/Debit Card</option>
+						<option value="Online Banking">Online Banking</option>
+						<option value="Touch N Go">Touch N Go</option>
+					</select> <br>
+				</div>
+				
+				<div class="data">
+					<label>Total Price</label> <br>
+					<input type="text" id="totalPrice" name="totalPrice" value="RM0.00" disabled><br>
+				</div>
+					
+                <div class="data">
+                    <button type="submit" value="submit">Submit</button><br>
+                </div>
+				
+				<div class="data">
+                    <button type="button" onClick="document.location='home.html'">Back to Home</button><br>
+                </div>
+				
+				<input type="hidden" id="totalPriceDatabase" name="totalPriceDatabase"><br>
+			</div>
+		</form>
+		<div class="socialMedia">
+          <nav>
+            <ul>
+               <li><a href="https://www.facebook.com/tickethotline/" target="_blank"><img src="fb-icon.png" class="fb-icon"></a></li>
+              <li><a href="https://www.instagram.com/ticket.hotline/" target="_blank"><img src="ig-logo.png" class="ig-icon"></a></li>
+               <li><a href="https://twitter.com/tickethotline?lang=en" target="_blank"><img src="twitter-logo.png" class="twitter-icon"></a></li>
+            </ul>
+          </nav>
+        </div>
+	</div>
+	
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+			
+            var numOfTicketInput = document.getElementById('numOfTicket');
+            var totalPriceOutput = document.getElementById('totalPrice');
+			var totalPriceDatabase = document.getElementById('totalPriceDatabase');
+
+
+            numOfTicketInput.addEventListener('input', function () {
+
+                var numOfTickets = parseInt(numOfTicketInput.value, 10);
+
+                var pricePerTicket = 30;
+
+                var totalPrice = numOfTickets * pricePerTicket;
+
+                totalPriceOutput.value = 'RM' + totalPrice;
+				totalPriceDatabase.value = 'RM' + totalPrice;
+            });
+        });
+    </script>
+	
+</body>
+<footer>
+	<p>By Hairolakma Danish. All right reserved. copyright &#169; 2023.</p>
+</footer>
+</html>

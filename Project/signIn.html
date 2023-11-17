@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign In</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2? family=Nunito: wght@400;500; 600; 700; 800; 900&display=swap');
+    
+    * { 
+        padding: 0; 
+        margin: 0; 
+        box-sizing: border-box; 
+    }
+
+    .container{
+			width: 100%;
+		
+		}
+	.navbar{
+            height: 15%;
+            display: flex; 
+            align-items: center;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,0,212,1), rgba(0,221,255,1));
+    }
+
+    .logo{
+        height: 50px;
+        margin-left: 30px;
+    }
+
+
+    .bolaLogo{
+        height: 80px;
+        padding-left: 30px;
+        margin-left: 70%;
+        }
+
+    body {
+        font-family: "Hoefler Text", "Liberation Serif",  "Times New Roman", "serif";
+        background-image: url("paymentbg.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: center; 
+        padding-top: 1rem;
+    }
+
+    .sub-form {
+        display: flex;
+        align-items: center; 
+        width: 30vw;
+        height: 85vh;
+        flex-direction: column; 
+        border-radius: 12px; 
+        box-shadow: rgba(50, 50, 93, 0,25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+        background-color: white;
+    }
+
+    h2 {
+        margin: 1.5rem 0 2rem 0; 
+        text-align: center;
+    }
+
+    Label {
+		font-size: 20px
+        padding-left: 16px;
+    }
+
+    input {
+        height: 35px;
+        width: 230px;
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        margin: 10px 0;
+    }
+	
+	select {
+        height: 35px;
+        width: 230px;
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        margin: 10px 0;
+    }
+
+    button {
+        padding: 12px 48px;
+        border-radius: 50px;
+        margin-top: 1rem; 
+        cursor: pointer;
+        color: white;
+        font-size: 15px;
+        border-radius: 1rem;
+        border: none;
+        position: relative;
+        background: #000000;
+        transition: 0.1s;
+        width: 100%;
+        }
+	
+	.socialMedia{
+        margin-top: 5%;
+        height: 10%;
+        display: flex; 
+        align-items: center;
+        background:#000000;
+    }
+
+    .socialMedia nav{
+        flex: 1;
+        text-align: right;
+        padding-left: 100px;
+    }
+
+    .socialMedia nav ul li{
+        list-style: none;
+        display: inline-block;
+
+    }
+
+    .fb-icon{
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .ig-icon{
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .twitter-icon{
+        height: 50px;
+        cursor: pointer;
+    }
+
+    footer {
+        display: block;
+        height: 50hv;
+        padding: 3px;
+        text-align: right;
+        background-color: black;
+        color: white;
+    }
+	
+    </style>
+</head>
+
+<body>
+<div class="container">
+	<div class="navbar">
+        <img src="thlogo.png" class="logo">
+        <img src="bolaLogo.png" class="bolaLogo">
+    </div>
+	
+    <div class="form">
+        <form action="register.php" id="register" class="sub-form" method="post">
+            <div class="upper-form">
+                <h2>Admin Information</h2>
+                <label>Full Name</label> <br>
+                <input type="text" name="name"><br>
+
+                <label>IC Number (without space or -)</label> <br>
+                <input type="text" name="icNum"><br>
+
+                <div class="data">
+                    <label>Job Position</label> <br>
+                    <select id="jobTitle" name="jobTitle">
+                        <option value="Manager">Manager</option>
+                        <option value="Staff">Staff</option>
+                    </select> <br>
+                </div>
+
+                <label>Telephone Number (without -)</label> <br>
+                <input type="text" name="telNum"><br>
+
+                <label>Email</label> <br>
+                <input type="text" name="email"><br>
+
+                <label>Create Password</label> <br>
+                <input type="password" name="passwords"><br>
+
+                <div class="button">
+                    <button type="submit" value="submit">Submit</button><br>
+                    <button type="button" onClick="document.location='adminMenu.html'">Back to menu</button><br>
+                </div>
+            </div>
+        </form>
+    </div>
+	<div class="socialMedia">
+      <nav>
+        <ul>
+           <li><a href="https://www.facebook.com/tickethotline/" target="_blank"><img src="fb-icon.png" class="fb-icon"></a></li>
+          <li><a href="https://www.instagram.com/ticket.hotline/" target="_blank"><img src="ig-logo.png" class="ig-icon"></a></li>
+           <li><a href="https://twitter.com/tickethotline?lang=en" target="_blank"><img src="twitter-logo.png" class="twitter-icon"></a></li>
+        </ul>
+      </nav>
+   </div>
+</div> 
+</body>
+	<footer>
+	<p>By Hairolakma Danish. All right reserved. copyright &#169; 2023.</p>
+</footer>
+</html>
